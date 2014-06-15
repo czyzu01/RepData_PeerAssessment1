@@ -21,7 +21,7 @@ print(xt, type="html")
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sun Jun  8 23:03:25 2014 -->
+<!-- Sun Jun 15 06:48:57 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH>     steps </TH> <TH>         date </TH> <TH>    interval </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> Min.   :  0.0   </TD> <TD> 2012-10-01:  288   </TD> <TD> Min.   :   0   </TD> </TR>
@@ -142,7 +142,7 @@ print(xt, type="html")
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sun Jun  8 23:03:28 2014 -->
+<!-- Sun Jun 15 06:49:01 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH>     steps </TH> <TH>         date </TH> <TH>    interval </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> Min.   :  0.0   </TD> <TD> 2012-10-01:  288   </TD> <TD> Min.   :   0   </TD> </TR>
@@ -163,7 +163,7 @@ print(xt, type="html")
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Sun Jun  8 23:03:28 2014 -->
+<!-- Sun Jun 15 06:49:01 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH>     steps </TH> <TH>         date </TH> <TH>    interval </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> Min.   :  0.0   </TD> <TD> 2012-10-01:  288   </TD> <TD> Min.   :   0   </TD> </TR>
@@ -241,10 +241,10 @@ meanForFilledActivity<-aggregate(steps ~ interval+weekdays, filledActivity, mean
 par(mfrow=c(2,1))
 plot(x=meanForFilledActivity$interval[meanForFilledActivity$weekdays=="weekday"], 
      y=meanForFilledActivity$steps[meanForFilledActivity$weekdays=="weekday"], 
-     type="l", xlab="", ylab="")
+     type="l", xlab="", ylab="", main="Weekday")
 plot(x=meanForFilledActivity$interval[meanForFilledActivity$weekdays=="weekend"], 
      y=meanForFilledActivity$steps[meanForFilledActivity$weekdays=="weekend"], 
-     type="l", xlab="", ylab="")
+     type="l", xlab="", ylab="", main="Weekend")
 ```
 
 ![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 

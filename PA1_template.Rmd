@@ -152,8 +152,8 @@ meanForFilledActivity<-aggregate(steps ~ interval+weekdays, filledActivity, mean
 par(mfrow=c(2,1))
 plot(x=meanForFilledActivity$interval[meanForFilledActivity$weekdays=="weekday"], 
      y=meanForFilledActivity$steps[meanForFilledActivity$weekdays=="weekday"], 
-     type="l", xlab="", ylab="")
+     type="l", xlab="", ylab="", main="Weekday")
 plot(x=meanForFilledActivity$interval[meanForFilledActivity$weekdays=="weekend"], 
      y=meanForFilledActivity$steps[meanForFilledActivity$weekdays=="weekend"], 
-     type="l", xlab="", ylab="")
+     type="l", xlab="", ylab="", main="Weekend")
 ```
